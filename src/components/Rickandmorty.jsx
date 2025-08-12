@@ -69,12 +69,12 @@ function Rickandmorty() {
         return <div className="p-4 text-red-400 text-center">Error: {error}</div>
     return (
         <div className="p-6 bg-gray-900 min-h-screen text-white">
-            <h2 className="text-center text-3xl font-bold mb-6 text-green-400">
+            <h2 className="text-center text-3xl font-bold mb-6 text-blue-400">
                 Rick and Morty Characters ({characters.length})
             </h2>
             <div className="flex justify-center mb-6">
                 <input
-                    className="w-full max-w-md px-4 py-2 rounded bg-gray-800 text-white placeholder-gray-400 border border-green-500  focus:ring-2 focus:ring-green-500"
+                    className="w-full max-w-md px-4 py-2 rounded bg-gray-800 text-white placeholder-gray-400 border border-blue-500  focus:ring-2 focus:ring-blue-500"
                     onChange={handleSearch}
                     type="search"
                     name="search"
@@ -91,15 +91,15 @@ function Rickandmorty() {
                             <img
                                 src={char.image}
                                 alt={char.name}
-                                className="mx-auto rounded-full size-32 object-cover border-4 border-green-500"
+                                className="mx-auto rounded-full size-32 object-cover border-4 border-blue-500"
                             />
-                            <h3 className="mt-4 font-semibold text-lg text-green-400">
+                            <h3 className="mt-4 font-semibold text-lg text-blue-400">
                                 {char.name}
                             </h3>
                         </Link>
                         <button
                             onClick={() => Delete(char.id)}
-                            className="mt-4 bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded"
+                            className="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded"
                         >
                             DELETE ME
                         </button>
